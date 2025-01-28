@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Jersey+15&display=swap" rel="stylesheet"></head>
+  <title>Rainbow Gallery</title>
+  <style>
+    /* General styling */
+    body {
+      background-color: black;
+  font-family: "Jersey 15", serif;
+      color: white;
+      margin: 0;
+    }
+
+header {
+  text-align: center;
+  padding: 20px;
+  border-bottom: 2px solid #fff;
+}
+.logo {
+  font-size: 3rem;
+  font-family: 'Graffiti Font', sans-serif;
+}
+
+
+.sidebar {
+    position: fixed; /* Ensures the sidebar stays in place */
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    right: 20px; /* Distance from the right of the viewport */
+    background-color: #222; /* Dark background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6); /* Shadow for depth */
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 10px; /* Space between buttons */
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    background: #444;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    height: 40px;
+    width: 100px;
+}
+
+.sidebar a:hover {
+    background: #666;
+}
+
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Section Styles */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+  padding: 20px;
+  border: 2px solid #fff;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+    /* Gallery styling */
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .gallery-item {
+      position: relative;
+    }
+
+    .gallery-image {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border: 2px solid transparent;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .gallery-image:hover {
+      border-color: transparent;
+      box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8), 0 0 20px 4px rgba(255, 0, 0, 0.8),
+                  0 0 30px 6px rgba(0, 255, 0, 0.8), 0 0 40px 8px rgba(0, 0, 255, 0.8);
+      animation: rainbow-border 1.5s infinite linear;
+    }
+
+    /* Rainbow effect */
+    @keyframes rainbow-border {
+      0% { border-color: red; }
+      25% { border-color: orange; }
+      50% { border-color: yellow; }
+      75% { border-color: green; }
+      100% { border-color: red; }
+    }
+
+   /* Modal styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  width: auto; /* Ensure the natural width is used */
+  height: auto; /* Ensure the natural height is used */
+  max-width: 100%; /* Restrict it to the viewport width */
+  max-height: 100%; /* Restrict it to the viewport height */
+  object-fit: contain; /* Maintain the aspect ratio */
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Optional: subtle glow */
+  border-radius: 10px; /* Optional: rounded corners */
+}
+
+/* Optional: Larger close button */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+}
+
+ .logo {
+  font-family: "Jersey 15", san-serif;
+  font-weight: 100;
+  font-style: normal;
+  height: 600%;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="logo">⋆˚࿔SOMADCUZBAD𝜗𝜚˚⋆</h1>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <nav>
+      <a href="https://www.instagram.com/epilepticgutszz/">✮⋆˙Instagram౨ৎ</a> × 
+      <a href="https://www.youtube.com/@somadcuzbad">✮⋆˙YouTube౨ৎ</a> × 
+      <a href="https://www.roblox.com/users/1112436767/profile">✮⋆˙Roblox౨ৎ</a>
+    </nav>
+  </header>
+  <main>
+<section class="about" style="background-image: url('https://media.tenor.com/sQDz_xy06NMAAAAM/magic-stars.gif'); background-size: cover; background-position: center;">
+  <h1> Click on a preview to see full image </h1>
+</section>
+<aside class="sidebar">
+    <a href="file:///C:/Users/Neriza/Downloads/New%20folder/index.html">About</a>
+    <a href="file:///C:/Users/Neriza/Downloads/New%20folder/gallery.html">OC Art</a>
+    <a href="#">Fanart</a>
+    <a href="#">Doodles</a>
+    <a href="#">Miscellaneous</a>  
+</aside>
+    <div class="gallery">
+    <div class="gallery-item">
+      <img src="https://media.discordapp.net/attachments/1142731345269887006/1327898986048131123/Untitled1154_20241229151804.png?ex=6784bdcd&is=67836c4d&hm=3a4aad666815e06da67e2e2b4ad627d37398c2ac644957091fc6364968797594&=&format=webp&quality=lossless&width=791&height=593" alt="Image 1" class="gallery-image">
+    </div>
+    <div class="gallery-item">
+      <img src="https://media.discordapp.net/attachments/1142731345269887006/1327906672953528392/IMG_2364.png?ex=6784c4f6&is=67837376&hm=3971afda7d48993abd817b8a0e214f9ce97102dc91b964ed40a55f7bd578dba2&=&format=webp&quality=lossless&width=800&height=593" alt="Image 2" class="gallery-image">
+    </div>
+    <div class="gallery-item">
+      <img src="https://media.discordapp.net/attachments/1142731345269887006/1327898986966941718/Untitled1126_20250112144053.png?ex=6784bdcd&is=67836c4d&hm=2793ae9c3e1ed292aebb09f16790f013762fdf85f5f46ceb30e67d2f82304560&=&format=webp&quality=lossless&width=791&height=593" alt="Image 3" class="gallery-image">
+    </div>
+    <div class="gallery-item">
+      <img src="https://media.discordapp.net/attachments/1142731345269887006/1327898987922985001/Untitled1116_20250112144357.png?ex=6784bdcd&is=67836c4d&hm=6855d7ae06a61f46c2fd315c3cde5b54f1b5c8e5e59b16107895943b1f63d68a&=&format=webp&quality=lossless&width=791&height=593" alt="Image 4" class="gallery-image">
+    </div>
+    <div class="gallery-item">
+      <img src="https://media.discordapp.net/attachments/1142731345269887006/1327898988774555698/Untitled1111_20241116080706.png?ex=6784bdce&is=67836c4e&hm=69b1cf96684a04f72ef125e7b3b4aab25b821c07142f1fba770356e63c7a367a&=&format=webp&quality=lossless&width=593&height=593" alt="Image 5" class="gallery-image">
+    </div>
+    <div class="gallery-item">
+      <img src="https://media.discordapp.net/attachments/1142731345269887006/1327909137954111518/Untitled1087_20250112155635.png?ex=6784c741&is=678375c1&hm=94efb3f68eb0330f27834c041f5382c05ddcba218218d6e17ee0899fc491f021&=&format=webp&quality=lossless&width=593&height=593" alt="Image 6" class="gallery-image">
+    </div>
+    <div class="gallery-item">
+      <img src="https://media.discordapp.net/attachments/1142731345269887006/1327899164037742602/Untitled1027_20250112145144.png?ex=6784bdf7&is=67836c77&hm=eedd2c9083dab913d07021f70684698715fc6486b89ff5ccadf202c95fcd09e4&=&format=webp&quality=lossless&width=582&height=437" alt="Image 7" class="gallery-image">
+    </div>
+    <div class="gallery-item">
+      <img src="https://media.discordapp.net/attachments/1142731345269887006/1327899223848390697/Untitled986_20250112145311.png?ex=6784be06&is=67836c86&hm=83b1a29c6ed131212fa5982feea6ab5043ae796efaa221f73b82760afb333c59&=&format=webp&quality=lossless&width=593&height=593" alt="Image 8" class="gallery-image">
+    </div>
+     <div class="gallery-item">
+      <img src="https://media.discordapp.net/attachments/1142731345269887006/1327899239115919402/Untitled970_20250112145327.png?ex=6784be09&is=67836c89&hm=7bce7b1f4789abfa6e5e3b2eea56b81dddb593d8e8c5f3806b263073e0ed44be&=&format=webp&quality=lossless&width=437&height=437" alt="Image 9" class="gallery-image">
+    </div>
+     <div class="gallery-item">
+      <img src="https://media.discordapp.net/attachments/1142731345269887006/1327899339581947964/Untitled909_20250112145743.png?ex=6784be21&is=67836ca1&hm=2129622cdbbbc0e492efb74e923d35b131a87d30f2db46b6fd2eca8b5edd66f8&=&format=webp&quality=lossless&width=437&height=437" alt="Image 10" class="gallery-image">
+    </div>
+     <div class="gallery-item">
+      <img src="https://media.discordapp.net/attachments/1142731345269887006/1327898583906648094/Untitled817_20250112150002.png?ex=6784bd6d&is=67836bed&hm=8a2108e7a6d7bc8a1ed415d9216ddd64d5fcec3800580f3d9f27522bd8c42bf1&=&format=webp&quality=lossless&width=593&height=593" alt="Image 11" class="gallery-image">
+    </div>
+     <div class="gallery-item">
+      <img src="https://media.discordapp.net/attachments/1142731345269887006/1327898583013523486/Untitled786_20250112150031.png?ex=6784bd6d&is=67836bed&hm=2c131b514112cfaf0f5ffdacf31765a6ffdb7b45061c70d4c5d7b6dd14194b76&=&format=webp&quality=lossless&width=593&height=593" alt="Image 12" class="gallery-image">
+    </div>
+     <div class="gallery-item">
+      <img src="https://media.discordapp.net/attachments/1142731345269887006/1327898581604237373/Untitled779_20250112150045.png?ex=6784bd6d&is=67836bed&hm=d084da039f5013fca8aa3e99875ebf6b8835b52371cf2068727df07e7226f9a6&=&format=webp&quality=lossless&width=593&height=593" alt="Image 13" class="gallery-image">
+    </div>
+    <div class="gallery-item">
+      <img src="https://media.discordapp.net/attachments/1142731345269887006/1327898516252655636/Untitled742_20250112150221.png?ex=6784bd5d&is=67836bdd&hm=3b354c93fbeec38a53329ecbefb5809e1937ebda29b74f5b5029c35c7924effc&=&format=webp&quality=lossless&width=593&height=593" alt="Image 14" class="gallery-image">
+    <!-- Add more images as needed -->
+  </div>
+
+  <div class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-image">
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const modal = document.querySelector('.modal');
+      const modalImage = document.getElementById('modal-image');
+      const closeBtn = document.querySelector('.close');
+
+      if (modal && modalImage && closeBtn) {
+        // Add click event to each gallery image
+        document.querySelectorAll('.gallery-image').forEach(image => {
+          image.addEventListener('click', () => {
+            modal.style.display = 'flex';
+            modalImage.src = image.src;
+          });
+        });
+
+        // Close the modal when the close button is clicked
+        closeBtn.addEventListener('click', () => {
+          modal.style.display = 'none';
+        });
+
+        // Close the modal when clicking outside the image
+        window.addEventListener('click', (event) => {
+          if (event.target === modal) {
+            modal.style.display = 'none';
+          }
+        });
+      } else {
+        console.error("Modal or related elements are missing in the DOM!");
+      }
+    });
+        window.alert('WARNING: art is a laggy, they may not look the same as the versions i post in Instagram!!');
+
+  </script>
+</body>
+</html>
